@@ -1,77 +1,43 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from '../layouts/PageLayout.astro';
 ---
 
-<Layout title="Alli's Homebrew Shop - Switch">
-    <main>
-        <h1>Homebrew shop - Switch</h1>
-        <p class="instructions">Page yet to be filled out.</p>
-
-        <p class="instructions">
-            Note: price is for installation of homebrew media ONLY. Not done remotely. If you want to do it yourself,
-            there is links to the tutorials on the page. This is for those who don't know how to or don't want to do it
-            themselves. I will not provide SD cards or any sort of device for the homebrew. Console, SD card, harddrive
-            etc is to be supplied by the customer. Currently not accepting deliveries.
-        </p>
-    </main>
+<Layout title="Switch">
+    <p>
+        If you wish to do this yourself, the link for such is <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://nh-server.github.io/switch-guide/">here</a
+        >.
+    </p>
+    <p>
+        Switch Homebrew<br />Full disclosure, I have not put homebrew onto a Switch before. However, I have a tool to
+        help start up the process and have performed homebrew on other devices before.<br />If you would like to use the
+        tool for yourself and then homebrew it yourself, feel free to ask below. If you trust me enough to install the
+        homebrew for you, read below.<br />I will install Switch homebrew software for you, and can install anything you
+        would like.
+    </p>
+    <p>Provided service:</p>
+    <ul>
+        <li>Install homebrew using the fusee-gelee</li>
+        <li>Install necessary media for brick prevention and homebrew use</li>
+        <li>Perform backups in the case of a brick</li>
+        <li>Install a homebrew browser onto your system</li>
+    </ul>
+    <p>What you need</p>
+    <ul>
+        <li>
+            A switch that is <a href="https://ismyswitchpatched.com/">hackable</a>. I will ask for your serial number to
+            check if it is hackable.<br />* The Switch Lite and OLED editions are not hackable whatsoever. Only original
+            Switch consoles that were released before the hardware change are hackable.
+        </li>
+        <li>A microSD card that is at least 64gb</li>
+    </ul>
+    <p>
+        DISCLAIMER: The Custom Firmware for the Nintendo Switch is <b>volatile</b>. This means that if your Switch were
+        to turn off fully (from shutting down, battery dying etc.) then the homebrew will no longer appear, and you will
+        need to inject it yourself manually. For this reason I will be selling jigs, or recommend you pick one up
+        yourself. I will also give a demonstration on how to reinstall the homebrew software onto the Switch.
+    </p>
+    <p>Alright, you've decided you want to get homebrew for your Switch? Contact me below to get started.</p>
 </Layout>
-
-<style>
-    main {
-        margin: auto;
-        padding: 1rem;
-        width: 800px;
-        max-width: calc(100% - 2rem);
-        color: white;
-        font-size: 20px;
-        line-height: 1.6;
-    }
-    .astro-a {
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translatex(-50%);
-        width: 220px;
-        height: auto;
-        z-index: -1;
-    }
-    h1 {
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin-bottom: 1em;
-    }
-    .text-gradient {
-        background-image: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
-    }
-    .instructions {
-        margin-bottom: 2rem;
-        border: 1px solid rgba(var(--accent-light), 25%);
-        background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-        padding: 1.5rem;
-        border-radius: 8px;
-    }
-    .instructions code {
-        font-size: 0.8em;
-        font-weight: bold;
-        background: rgba(var(--accent-light), 12%);
-        color: rgb(var(--accent-light));
-        border-radius: 4px;
-        padding: 0.3em 0.4em;
-    }
-    .instructions strong {
-        color: rgb(var(--accent-light));
-    }
-    .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 2rem;
-        padding: 0;
-    }
-</style>
